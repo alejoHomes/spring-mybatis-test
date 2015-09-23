@@ -16,8 +16,8 @@ CREATE TABLE user_detail
 	department_id integer,
 	CONSTRAINT user_detail_pkey PRIMARY KEY (id),
 	CONSTRAINT "departFK" FOREIGN KEY (department_id)
-		REFERENCES department (id) MATCH SIMPLE
-		ON UPDATE NO ACTION ON DELETE NO ACTION
+	REFERENCES department (id) MATCH SIMPLE
+	ON UPDATE NO ACTION ON DELETE NO ACTION
   );
 
 
